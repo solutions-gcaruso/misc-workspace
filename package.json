@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "org-events:dry": "node src/scripts/sync-org-events-from-airtable.js --dry-run",
+    "org-events:apply": "node src/scripts/sync-org-events-from-airtable.js --apply",
+    "org-events:test": "node --test src/test/org-event-*.test.js",
+    "clean:client-names:dry": "node src/scripts/normalize-airtable-client-names.js --dry-run",
+    "clean:client-names:apply": "node src/scripts/normalize-airtable-client-names.js --apply",
+    "parse:attendees": "node src/scripts/parse-attendees.js",
+    "sync:event:dry": "node src/scripts/sync-airtable-event.js",
+    "sync:event:apply": "node src/scripts/sync-airtable-event.js --apply",
+    "import:clients:dry": "node src/scripts/import-airtable-clients.js",
+    "import:clients:apply": "node src/scripts/import-airtable-clients.js --apply",
+    "generate:icsc:golf": "node src/scripts/generate-icsc-golf-personalizations.js",
+    "sync:attendee:linkedin:test": "node src/scripts/enrich-attendee-linkedin.js --limit 3",
+    "sync:attendee:linkedin": "node src/scripts/enrich-attendee-linkedin.js",
+    "sync:phoenix:dry": "node src/scripts/sync-icsc-phoenix-2026.js --dry-run",
+    "sync:phoenix:apply": "node src/scripts/sync-icsc-phoenix-2026.js --apply",
+    "sync:phoenix:linkedin:test": "node src/scripts/enrich-phoenix-linkedin.js --limit 3",
+    "sync:phoenix:linkedin": "node src/scripts/enrich-phoenix-linkedin.js",
+    "test": "node --test --test-isolation=none src/test/*.test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "docx": "^9.6.1",
+    "dotenv": "^17.3.1",
+    "fastest-levenshtein": "^1.0.16",
+    "playwright": "^1.58.2",
+    "xlsx": "^0.18.5"
+  }
+}

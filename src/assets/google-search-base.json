@@ -1,0 +1,30 @@
+{
+  "disableGoogleSearchResults": false,
+  "focusOnPaidAds": false,
+  "forceExactMatch": false,
+  "includeIcons": false,
+  "includeUnfilteredResults": false,
+  "maxPagesPerQuery": 1,
+  "maximumLeadsEnrichmentRecords": 0,
+  "mobileResults": false,
+  "queries": "{{name}} {{position}} {{company}} LinkedIn profile",
+  "resultsPerPage": 1,
+  "saveHtml": false,
+  "saveHtmlToKeyValueStore": true,
+  "aiModeSearch": {
+    "enableAiMode": false
+  },
+  "perplexitySearch": {
+    "enablePerplexity": false,
+    "returnImages": false,
+    "returnRelatedQuestions": false
+  },
+  "chatGptSearch": {
+    "enableChatGpt": false
+  },
+  "searchLanguage": "",
+  "languageCode": "",
+  "wordsInTitle": [],
+  "wordsInText": [],
+  "wordsInUrl": []
+}

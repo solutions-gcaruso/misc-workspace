@@ -1,0 +1,13 @@
+node_modules/
+.env
+
+# Generated artifacts
+output/
+
+# Local/runtime data
+config/*.json
+!config/*.example.json
+inputs/active/
+inputs/archive/
+inputs/reference/
+review/
