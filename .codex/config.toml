@@ -1,0 +1,3 @@
+[mcp_servers.airtable]
+bearer_token_env_var = "AIRTABLE_MCP_TOKEN"
+url = "https://mcp.airtable.com/mcp"
